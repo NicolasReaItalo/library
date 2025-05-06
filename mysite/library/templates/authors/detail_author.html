@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{author.last_name}} </title>
+</head>
+
+<body>
+    <h1>{{author.first_name}} {{author.last_name}}</h1>
+    <ul>
+        {% for book in books %}
+        <li>
+            <a href="/library/books/details/{{book.id}}/">{{book.title}}</a>
+
+        </li>
+        {% endfor %}
+    </ul>
+
+</body>
+
+</html>
